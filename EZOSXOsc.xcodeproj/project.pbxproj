@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A3FBA491C627CCE0078D455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FBA481C627CCE0078D455 /* AppDelegate.m */; };
+		8A32DDC51C639C72006F5252 /* EZOSXOsc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A32DDC31C639C72006F5252 /* EZOSXOsc.cpp */; };
+		8A32DDC81C639E69006F5252 /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A32DDC61C639E69006F5252 /* Oscillator.cpp */; };
+		8A3FBA491C627CCE0078D455 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FBA481C627CCE0078D455 /* AppDelegate.mm */; };
 		8A3FBA4B1C627CCE0078D455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FBA4A1C627CCE0078D455 /* main.m */; };
 		8A3FBA4D1C627CCE0078D455 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3FBA4C1C627CCE0078D455 /* Images.xcassets */; };
 		8A3FBA501C627CCE0078D455 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3FBA4E1C627CCE0078D455 /* MainMenu.xib */; };
 		8A3FBA5C1C627CCE0078D455 /* EZOSXOscTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FBA5B1C627CCE0078D455 /* EZOSXOscTests.m */; };
+		8A3FBA681C6282AD0078D455 /* Pfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FBA661C6282AD0078D455 /* Pfx.cpp */; };
+		8A3FBA6B1C6285B60078D455 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3FBA6A1C6285B60078D455 /* CoreAudio.framework */; };
+		8A3FBA6D1C6285BF0078D455 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3FBA6C1C6285BF0078D455 /* AudioUnit.framework */; };
+		8A3FBA6F1C6285C40078D455 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3FBA6E1C6285C40078D455 /* AudioToolbox.framework */; };
+		8A3FBA721C6289530078D455 /* Unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FBA701C6289530078D455 /* Unit.cpp */; };
+		8A3FBA751C628E9F0078D455 /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FBA731C628E9F0078D455 /* Score.cpp */; };
+		8A3FBA781C6291980078D455 /* InputMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FBA761C6291980078D455 /* InputMgr.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +34,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A32DDC31C639C72006F5252 /* EZOSXOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EZOSXOsc.cpp; sourceTree = "<group>"; };
+		8A32DDC41C639C72006F5252 /* EZOSXOsc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EZOSXOsc.hpp; sourceTree = "<group>"; };
+		8A32DDC61C639E69006F5252 /* Oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Oscillator.cpp; path = ../../../LibrariesX/PfxLib/Oscillator.cpp; sourceTree = "<group>"; };
+		8A32DDC71C639E69006F5252 /* Oscillator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Oscillator.hpp; path = ../../../LibrariesX/PfxLib/Oscillator.hpp; sourceTree = "<group>"; };
 		8A3FBA421C627CCE0078D455 /* EZOSXOsc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZOSXOsc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3FBA461C627CCE0078D455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A3FBA471C627CCE0078D455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8A3FBA481C627CCE0078D455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A3FBA481C627CCE0078D455 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		8A3FBA4A1C627CCE0078D455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A3FBA4C1C627CCE0078D455 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8A3FBA4F1C627CCE0078D455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8A3FBA551C627CCE0078D455 /* EZOSXOscTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZOSXOscTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3FBA5A1C627CCE0078D455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A3FBA5B1C627CCE0078D455 /* EZOSXOscTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZOSXOscTests.m; sourceTree = "<group>"; };
+		8A3FBA661C6282AD0078D455 /* Pfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pfx.cpp; path = ../../../LibrariesX/PfxLib/Pfx.cpp; sourceTree = "<group>"; };
+		8A3FBA671C6282AD0078D455 /* Pfx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Pfx.hpp; path = ../../../LibrariesX/PfxLib/Pfx.hpp; sourceTree = "<group>"; };
+		8A3FBA6A1C6285B60078D455 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		8A3FBA6C1C6285BF0078D455 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		8A3FBA6E1C6285C40078D455 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8A3FBA701C6289530078D455 /* Unit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Unit.cpp; path = ../../../LibrariesX/PfxLib/Unit.cpp; sourceTree = "<group>"; };
+		8A3FBA711C6289530078D455 /* Unit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Unit.hpp; path = ../../../LibrariesX/PfxLib/Unit.hpp; sourceTree = "<group>"; };
+		8A3FBA731C628E9F0078D455 /* Score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Score.cpp; path = ../../../LibrariesX/PfxLib/Score.cpp; sourceTree = "<group>"; };
+		8A3FBA741C628E9F0078D455 /* Score.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Score.hpp; path = ../../../LibrariesX/PfxLib/Score.hpp; sourceTree = "<group>"; };
+		8A3FBA761C6291980078D455 /* InputMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputMgr.cpp; path = ../../../LibrariesX/PfxLib/InputMgr.cpp; sourceTree = "<group>"; };
+		8A3FBA771C6291980078D455 /* InputMgr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = InputMgr.hpp; path = ../../../LibrariesX/PfxLib/InputMgr.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3FBA6F1C6285C40078D455 /* AudioToolbox.framework in Frameworks */,
+				8A3FBA6D1C6285BF0078D455 /* AudioUnit.framework in Frameworks */,
+				8A3FBA6B1C6285B60078D455 /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				8A3FBA441C627CCE0078D455 /* EZOSXOsc */,
+				8A3FBA691C62859C0078D455 /* Frameworks */,
 				8A3FBA581C627CCE0078D455 /* EZOSXOscTests */,
 				8A3FBA431C627CCE0078D455 /* Products */,
 			);
@@ -76,10 +104,11 @@
 		8A3FBA441C627CCE0078D455 /* EZOSXOsc */ = {
 			isa = PBXGroup;
 			children = (
+				8A3FBA651C6282920078D455 /* PfxLib */,
 				8A3FBA471C627CCE0078D455 /* AppDelegate.h */,
-				8A3FBA481C627CCE0078D455 /* AppDelegate.m */,
-				8A3FBA4C1C627CCE0078D455 /* Images.xcassets */,
-				8A3FBA4E1C627CCE0078D455 /* MainMenu.xib */,
+				8A3FBA481C627CCE0078D455 /* AppDelegate.mm */,
+				8A32DDC41C639C72006F5252 /* EZOSXOsc.hpp */,
+				8A32DDC31C639C72006F5252 /* EZOSXOsc.cpp */,
 				8A3FBA451C627CCE0078D455 /* Supporting Files */,
 			);
 			path = EZOSXOsc;
@@ -88,8 +117,10 @@
 		8A3FBA451C627CCE0078D455 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A3FBA4C1C627CCE0078D455 /* Images.xcassets */,
 				8A3FBA461C627CCE0078D455 /* Info.plist */,
 				8A3FBA4A1C627CCE0078D455 /* main.m */,
+				8A3FBA4E1C627CCE0078D455 /* MainMenu.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +140,33 @@
 				8A3FBA5A1C627CCE0078D455 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A3FBA651C6282920078D455 /* PfxLib */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FBA771C6291980078D455 /* InputMgr.hpp */,
+				8A3FBA761C6291980078D455 /* InputMgr.cpp */,
+				8A32DDC71C639E69006F5252 /* Oscillator.hpp */,
+				8A32DDC61C639E69006F5252 /* Oscillator.cpp */,
+				8A3FBA671C6282AD0078D455 /* Pfx.hpp */,
+				8A3FBA661C6282AD0078D455 /* Pfx.cpp */,
+				8A3FBA741C628E9F0078D455 /* Score.hpp */,
+				8A3FBA731C628E9F0078D455 /* Score.cpp */,
+				8A3FBA711C6289530078D455 /* Unit.hpp */,
+				8A3FBA701C6289530078D455 /* Unit.cpp */,
+			);
+			name = PfxLib;
+			sourceTree = "<group>";
+		};
+		8A3FBA691C62859C0078D455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FBA6E1C6285C40078D455 /* AudioToolbox.framework */,
+				8A3FBA6C1C6285BF0078D455 /* AudioUnit.framework */,
+				8A3FBA6A1C6285B60078D455 /* CoreAudio.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3FBA681C6282AD0078D455 /* Pfx.cpp in Sources */,
+				8A32DDC51C639C72006F5252 /* EZOSXOsc.cpp in Sources */,
+				8A3FBA721C6289530078D455 /* Unit.cpp in Sources */,
+				8A32DDC81C639E69006F5252 /* Oscillator.cpp in Sources */,
 				8A3FBA4B1C627CCE0078D455 /* main.m in Sources */,
-				8A3FBA491C627CCE0078D455 /* AppDelegate.m in Sources */,
+				8A3FBA781C6291980078D455 /* InputMgr.cpp in Sources */,
+				8A3FBA751C628E9F0078D455 /* Score.cpp in Sources */,
+				8A3FBA491C627CCE0078D455 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +465,7 @@
 				8A3FBA611C627CCE0078D455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A3FBA621C627CCE0078D455 /* Build configuration list for PBXNativeTarget "EZOSXOscTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +474,7 @@
 				8A3FBA641C627CCE0078D455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
